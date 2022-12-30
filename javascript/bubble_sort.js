@@ -10,7 +10,7 @@ function bubbleSort(arr) {
     throw new Error("error: input is not an array");
   }
   if (arrLength === 0) {
-    throw new Error("error: array is empty");
+    throw new Error("error: input array is empty");
   }
   if (arrLength === 1) {
     return arr;
@@ -43,7 +43,7 @@ function bubbleSortEff(arr) {
     throw new Error("error: input is not an array");
   }
   if (arrLength == 0) {
-    throw new Error("error:input array is empty");
+    throw new Error("error: input array is empty");
   }
   if (arrLength == 1) {
     return arr;

@@ -5,7 +5,7 @@ describe("Bubble sort test", () => {
     try {
       sort.bubbleSort([2]);
     } catch (e) {
-      expect(e.message).tobe("error: input is not an array");
+      expect(e.message).toBe("error: input is not an array");
     }
   });
   test("2. bubble sort single item array", () => {
