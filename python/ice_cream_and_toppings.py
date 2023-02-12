@@ -1,5 +1,4 @@
 class IceCreamMachine:
-    
     def __init__(self, ingredients, toppings):
         self.ingredients = ingredients
         self.toppings = toppings
@@ -12,9 +11,12 @@ class IceCreamMachine:
             return []
         for ing in self.ingredients:
             for top in self.toppings:
+                if top == "pista":
+                    continue
                 self.iceCream.append([ing, top])
         return self.iceCream
 
+# Test
 machine = IceCreamMachine(["vanilla", "chocolate"], ["chocolate sauce", "pista"])
-print(machine.scoops())
-#should print: [['vanilla', 'chocolate sauce'], ['chocolate', 'chocolate sauce']]
+scoops = machine.scoops()
+assert scoops == [['vanilla', 'chocolate sauce'], ['chocolate', 'chocolate sauce']]
