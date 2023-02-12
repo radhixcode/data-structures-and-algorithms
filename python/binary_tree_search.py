@@ -15,9 +15,14 @@ def contains(root, value):
             return False
         else:
             return contains(root.left, value)
-        
+
+# Test      
 n1 = Node(value=1, left=None, right=None)
 n3 = Node(value=3, left=None, right=None)
 n2 = Node(value=2, left=n1, right=n3)
-        
-print(contains(n2, 33))
+
+searchVal = contains(n2, 33)
+assert searchVal == False
+
+searchVal = contains(n2, 3)
+assert searchVal == True

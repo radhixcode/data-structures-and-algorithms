@@ -21,11 +21,12 @@ class Song:
 
         return False
 
-            
+# Test            
 first = Song("Hello")
 second = Song("Eye of the tiger")
     
 first.next_song(second)
 second.next_song(first)
-    
-print(first.is_in_repeating_playlist())
+
+isLoop = first.is_in_repeating_playlist()
+assert isLoop == True
