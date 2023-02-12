@@ -1,6 +1,6 @@
 const sort = require("../bubble_sort");
 
-describe("Bubble sort test", () => {
+describe("Bubble sort Test", () => {
   test("1. bubble sort empty array", () => {
     try {
       sort.bubbleSort([2]);

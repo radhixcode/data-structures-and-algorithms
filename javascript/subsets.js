@@ -4,7 +4,7 @@
  */
 var subsets = function (nums) {
   const output = [];
-  const backtrack = function (idx, subset) {
+  function backtrack(idx, subset) {
     output.push([...subset]);
     for (let i = idx; i < nums.length; i++) {
       subset.push(nums[i]);
